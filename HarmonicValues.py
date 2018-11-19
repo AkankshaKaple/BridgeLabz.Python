@@ -1,6 +1,8 @@
+# This program shows the harmonic values till number N given by user
+
+import utilityPackage.utility
+Utility_obj = utilityPackage.utility.utility()
+
 number = int(input('Enter the number'))
-i=1
-result=0
-for i in range(1,number+1):
-    result = result + (1/i)
-    print(result)
+result = Utility_obj.HarmonicValue(number)
+print(result)
